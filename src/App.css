@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
+@import url("https://www.w3schools.com/w3css/4/w3.css");
+
+
+
+.margintop {
+  margin-top: 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input {
+  
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid blue;
+  font-size: xx-large;
+  
+  
+ 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input[type=text]:focus {
+  border: 0px solid #555;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.inputFieldParent {
+
+  position: relative;
+  /* bottom: 100px; */
+  width: 100%;
+  top: 60px;
+
 }
 
-.App-link {
-  color: #61dafb;
+.inputFieldChild{
+  margin: 0 auto;
+  width: 70%;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.buttonChild {
+  margin: 0 auto;
+width: 10%;
+
+
+}
+
+.li-container {
+
+  font-size: xx-large;
+  
+}
+
+ol {
+
+/* outline: 1px solid purple; */
+box-shadow: 0 1px 0 purple;
+
+padding-right: 30px;
+margin-bottom: 20px;
+
+}
+
+span {
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+span:before, span:after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  top: 50%;
+  margin-top: -0.5px;
+  background: black;
+}
+
+
+span:before {
+  left: -2.5px;
+}
+span:after {
+  right: 2.5px;
+  background: black;
+  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+span:hover:before {
+  background: black;
+  width: 100%;
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+span:hover:after {
+  background: transparent;
+  width: 100%;
+  transition: 0s;
 }
