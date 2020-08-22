@@ -12,7 +12,7 @@ function Todos (props) {
             return (
             <div className='margintop'>
                 <Typography variant='h1' >
-                    No Todos...
+                    Hoorah! No Todos...
                 </Typography>
             </div>
             )
